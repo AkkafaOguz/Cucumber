@@ -1,10 +1,11 @@
+@Paralel02
 Feature: US1003 Kullanici istedigi kelime icin arama yapip sonucu test eder
 
   Scenario: TC07 istenen kelimenin oldugunu test etme
     Given kullanici "amazonUrl" sayfasina gider
     And "ipod" icin arama yapar
     Then sonucun "ipod" icerdigini test eder
-    And sayfayi kapatir
+
 
     # parametre olarak yazdigimiz kelimeyi stepdefinition'da String olarak kullanacaksa    # ne yazdigimiz onemli degil  "armut" gibi
     # Ancak eger parametre olarak yazdigimiz kelimeyi configuration.properties'den alacaksak    # burada yazdigimiz parametre'nin configuration.properties'deki yazim ile ayni olmasi gerekir    # "amazonUrl" gibi, eger yazim farkli olurdsa nullPointerException verir

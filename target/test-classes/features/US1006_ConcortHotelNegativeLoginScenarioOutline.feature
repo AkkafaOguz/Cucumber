@@ -5,7 +5,7 @@ Feature: US1006 Concort Hotel sayfasinda farkli kullanici bilgileri ile negatif 
 
 
     Given kullanici "concortHotelQaUrl" sayfasina gider
-    Then login kinkine tiklar
+    Then login linkine tiklar
     And username kutusuna "<wrongUserName>" yazar
     And password kutusuna "<wrongPassword>" yazar
     And login butonuna basar

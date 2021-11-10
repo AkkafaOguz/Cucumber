@@ -1,4 +1,4 @@
-@background
+@Paralel01
 Feature: US1002 amazon background
 
   Background: amazon sayfasina gitme
@@ -9,18 +9,17 @@ Feature: US1002 amazon background
 
     And nutella icin arama yapar
     Then sonucun nutella icerdigini test eder
-    And sayfayi kapatir
 
 
-  Scenario: TC05 amazon nutella arama
+
+  Scenario: TC05 amazon java arama
 
     And java icin arama yapar
     Then sonucun java icerdigini test eder
-    And sayfayi kapatir
 
 
-  Scenario: TC06 amazon nutella arama
+
+  Scenario: TC06 amazon ipad arama
 
     And ipad icin arama yapar
     Then sonucun ipad icerdigini test eder
-    And sayfayi kapatir

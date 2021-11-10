@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="52.081">
+    <testcase classname="US1003 Kullanici istedigi kelime icin arama yapip sonucu test eder" name="TC07 istenen kelimenin oldugunu test etme" time="8.086">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
+And "ipod" icin arama yapar.................................................passed
+Then sonucun "ipod" icerdigini test eder....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1004 Ebay sayfasinda kelime arama" name="TC08 kullanici besybuyda istedigi kelimeyi aratip test eder" time="5.6">
+        <system-out>
+            <![CDATA[Given kullanici "ebayUrl" sayfasina gider...................................passed
+Then ebayda "nutella" icin arama yapar......................................passed
+And ebayda sonucun "nutella" icerdigini test eder...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Amazon'da liste ile arama" name="TC09 amazon'da verilen bir listeyi aratip sonuclari test etme" time="7.348">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
+Then "nutella" icin arama yapar.............................................passed
+And sonuc yazisini yazdirir.................................................passed
+And sonucun "nutella" icerdigini test eder..................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Amazon'da liste ile arama" name="TC09 amazon'da verilen bir listeyi aratip sonuclari test etme 2" time="7.962">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
+Then "java" icin arama yapar................................................passed
+And sonuc yazisini yazdirir.................................................passed
+And sonucun "java" icerdigini test eder.....................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Amazon'da liste ile arama" name="TC09 amazon'da verilen bir listeyi aratip sonuclari test etme 3" time="8.419">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
+Then "ipod" icin arama yapar................................................passed
+And sonuc yazisini yazdirir.................................................passed
+And sonucun "ipod" icerdigini test eder.....................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Amazon'da liste ile arama" name="TC09 amazon'da verilen bir listeyi aratip sonuclari test etme 4" time="7.398">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
+Then "armut" icin arama yapar...............................................passed
+And sonuc yazisini yazdirir.................................................passed
+And sonucun "armut" icerdigini test eder....................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Amazon'da liste ile arama" name="TC09 amazon'da verilen bir listeyi aratip sonuclari test etme 5" time="7.052">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
+Then "Apple" icin arama yapar...............................................passed
+And sonuc yazisini yazdirir.................................................passed
+And sonucun "Apple" icerdigini test eder....................................passed
+Then sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

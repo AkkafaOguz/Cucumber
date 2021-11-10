@@ -1,3 +1,4 @@
+@Paralel01
 Feature: US1001 amazon arama
 
   @amazon @nutella
@@ -6,7 +7,7 @@ Feature: US1001 amazon arama
     When kullanici amazon sayfasina gider
     And nutella icin arama yapar
     Then sonucun nutella icerdigini test eder
-    And sayfayi kapatir
+
 
   @amazon @java
   Scenario: TC02 amazon nutella arama
@@ -14,7 +15,7 @@ Feature: US1001 amazon arama
     When kullanici amazon sayfasina gider
     And java icin arama yapar
     Then sonucun java icerdigini test eder
-    And sayfayi kapatir
+
 
   @amazon @ipad
   Scenario: TC03 amazon nutella arama
@@ -22,4 +23,3 @@ Feature: US1001 amazon arama
     When kullanici amazon sayfasina gider
     And ipad icin arama yapar
     Then sonucun ipad icerdigini test eder
-    And sayfayi kapatir

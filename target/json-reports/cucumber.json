@@ -1,0 +1,323 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-10T10:05:10.938Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "TC01_user_should_login_manager_profile",
+        "description": "",
+        "id": "room-reservation;tc01-user-should-login-manager-profile",
+        "after": [
+          {
+            "result": {
+              "duration": 999400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8089325000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici \"concortHotelQaUrl\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"concortHotelQaUrl\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.amazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 654888600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login linkine tiklar",
+            "match": {
+              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.login_linkine_tiklar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130864200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enter manager_id and manager_password",
+            "match": {
+              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.user_enter_manager_id_and_manager_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "manager",
+                  "Manager1!"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9263412400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "login butonuna basar",
+            "match": {
+              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.login_butonuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47709300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "sayfaya giris yaptigini kontrol eder",
+            "match": {
+              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.sayfayaGirisYaptiginiKontrolEder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@room_reservation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T10:05:29.181Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "TC02_user_should_navigate_room_reservation_page",
+        "description": "",
+        "id": "room-reservation;tc02-user-should-navigate-room-reservation-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1898042700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user navigates to the create_room_reservation_page",
+            "match": {
+              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.user_navigates_to_the_create_room_reservation_page()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@room_reservation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-10T10:05:31.085Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "TC03_user_should_be_able_to_book_a_reservation",
+        "description": "",
+        "id": "room-reservation;tc03-user-should-be-able-to-book-a-reservation",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 899938200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters all required fields",
+            "match": {
+              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.user_enters_all_required_fields(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "selectUserDropDown",
+                  "selectHotelRoomDropDown",
+                  "priceBox",
+                  "dateStartBox",
+                  "dateEndBox",
+                  "adultAmountBox",
+                  "childrenAmountBox",
+                  "contactNameSurnameBox",
+                  "contactPhoneBox",
+                  "contactEmailBox",
+                  "notesBox"
+                ]
+              },
+              {
+                "cells": [
+                  "manager",
+                  "Oguzhan",
+                  "500",
+                  "11/18/2021",
+                  "11/20/2021",
+                  "2",
+                  "3",
+                  "Test",
+                  "(999) 999-9999",
+                  "test@gmail.com",
+                  "test not"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56000500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks on the approved_checkbox",
+            "match": {
+              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userClicksOnTheApproved_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61998400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user clicks on the is paid_checkbox",
+            "match": {
+              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userClicksOnTheIsPaid_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66002500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on save_button",
+            "match": {
+              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userClicksOnSave_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999041100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user verifies the success_message",
+            "match": {
+              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userVerifiesTheSuccess_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 695103000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "sayfayi kapatir",
+            "match": {
+              "location": "stepDefinitions.amazonStepDefinition.sayfayi_kapatir()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@room_reservation"
+          }
+        ]
+      }
+    ],
+    "name": "Room Reservation",
+    "description": "",
+    "id": "room-reservation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US2002_All_fields_are_required_to_make_a_room_reservation.feature",
+    "tags": [
+      {
+        "name": "@room_reservation",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

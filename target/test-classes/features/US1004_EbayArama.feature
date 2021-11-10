@@ -1,11 +1,12 @@
-Feature: US1004 Bestbuy sayfasinda kelime arama
+@Paralel02
+Feature: US1004 Ebay sayfasinda kelime arama
 
   Scenario: TC08 kullanici besybuyda istedigi kelimeyi aratip test eder
 
     Given kullanici "ebayUrl" sayfasina gider
-    Then "nutella" icin arama yapar
-    And sonucun "nutella" icerdigini test eder
-    Then sayfayi kapatir
+    Then ebayda "nutella" icin arama yapar
+    And ebayda sonucun "nutella" icerdigini test eder
+
 
 
     # Burada tum step definition'lar tanimli gibi gorulse de testimiz calismaz
