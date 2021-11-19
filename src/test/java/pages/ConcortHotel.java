@@ -12,7 +12,7 @@ public class ConcortHotel {
     }
 
 
-    @FindBy(linkText = "Log in")
+    @FindBy (xpath = "//li[contains( @id, 'Log')]")
     public WebElement loginButton;
 
     @FindBy (id = "UserName")

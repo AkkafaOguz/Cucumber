@@ -1,29 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="23.094">
-    <testcase classname="Room Reservation" name="TC01_user_should_login_manager_profile" time="18.236">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="19.337">
+    <testcase classname="Create an Account" name="User should create and verify an account #1" time="5.847">
         <system-out>
-            <![CDATA[Given kullanici "concortHotelQaUrl" sayfasina gider.........................passed
-Then login linkine tiklar...................................................passed
-And user enter manager_id and manager_password..............................passed
-And login butonuna basar....................................................passed
-Then sayfaya giris yaptigini kontrol eder...................................passed
+            <![CDATA[Given kullanici "editorDataTables" sayfasina gider..........................passed
+And yeni bir kullanici olusturmak icin new butonuna tiklar..................passed
+Then adini "Oguzhan" girer..................................................passed
+And soyadini "Akkafa" girer.................................................passed
+Then pozisyonunu "QA Lead" girer............................................passed
+And ofisini "LA" oldugunu girer.............................................passed
+Then extension "1995" girer.................................................passed
+And baslangic tarihini "2021-11-18" girer...................................passed
+Then maasini "125000" girer.................................................passed
+And create tusuna basar.....................................................passed
+When adini "Oguzhan" arama kutusuna girer...................................passed
+Then kaydinin olustugunu dogrular "Oguzhan", "Akkafa".......................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Room Reservation" name="TC02_user_should_navigate_room_reservation_page" time="1.899">
+    <testcase classname="Create an Account" name="User should create and verify an account #1 2" time="1.736">
         <system-out>
-            <![CDATA[Given user navigates to the create_room_reservation_page....................passed
+            <![CDATA[Given kullanici "editorDataTables" sayfasina gider..........................passed
+And yeni bir kullanici olusturmak icin new butonuna tiklar..................passed
+Then adini "Onur Enes" girer................................................passed
+And soyadini "Celik" girer..................................................passed
+Then pozisyonunu "Team Lead" girer..........................................passed
+And ofisini "NY" oldugunu girer.............................................passed
+Then extension "1996" girer.................................................passed
+And baslangic tarihini "2021-11-19" girer...................................passed
+Then maasini "150000" girer.................................................passed
+And create tusuna basar.....................................................passed
+When adini "Onur Enes" arama kutusuna girer.................................passed
+Then kaydinin olustugunu dogrular "Onur Enes", "Celik"......................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Room Reservation" name="TC03_user_should_be_able_to_book_a_reservation" time="2.78">
+    <testcase classname="Create an Account" name="User should create and verify an account #1 3" time="1.674">
         <system-out>
-            <![CDATA[Given user enters all required fields.......................................passed
-And user clicks on the approved_checkbox....................................passed
-And user clicks on the is paid_checkbox.....................................passed
-And user clicks on save_button..............................................passed
-Then user verifies the success_message......................................passed
-And sayfayi kapatir.........................................................passed
+            <![CDATA[Given kullanici "editorDataTables" sayfasina gider..........................passed
+And yeni bir kullanici olusturmak icin new butonuna tiklar..................passed
+Then adini "Muhammed" girer.................................................passed
+And soyadini "Guner" girer..................................................passed
+Then pozisyonunu "Psychologist" girer.......................................passed
+And ofisini "FL" oldugunu girer.............................................passed
+Then extension "1996" girer.................................................passed
+And baslangic tarihini "2021-06-01" girer...................................passed
+Then maasini "225000" girer.................................................passed
+And create tusuna basar.....................................................passed
+When adini "Muhammed" arama kutusuna girer..................................passed
+Then kaydinin olustugunu dogrular "Muhammed", "Guner".......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create an Account" name="User should create and verify an account #2" time="4.7">
+        <system-out>
+            <![CDATA[Given kullanici "editorDataTables" sayfasina gider..........................passed
+And yeni bir kullanici olusturmak icin new butonuna tiklar formu doldurur ve kaydini dogrular.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create an Account" name="User should create and verify an account #3" time="5.189">
+        <system-out>
+            <![CDATA[Given kullanici "editorDataTables" sayfasina gider..........................passed
+And yeni bir kullanici olusturmak icin new butonuna tiklar formu doldurur "src/test/resources/testData/kullaniciBilgileriExcelData.xlsx" "KullaniciBilgileri" ve kaydini dogrular.passed
 ]]>
         </system-out>
     </testcase>

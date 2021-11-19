@@ -1,17 +1,28 @@
 @room_reservation
 Feature: Room Reservation
 
+#  Her karsilasilan kosul icin screeshot alinmasi ileride yasanacak problemlerin onune gecmek icin faydali olabilir.
+#  Fakat bu kadar gorselin depolanmasi problemi nasil asilacak bilemiyorum.
+#  Scenario Outline varken DataTable kullanmak ne kadar mantikli onu da bilemiyorum.
+
+
   Scenario: TC01_user_should_login_manager_profile
 
     Given kullanici "concortHotelQaUrl" sayfasina gider
+    Then take screenshot
     Then login linkine tiklar
     And user enter manager_id and manager_password
-      | manager | Manager1! |
+      | username | password  |
+      | manager  | Manager1! |
+    Then take screenshot
     And login butonuna basar
     Then sayfaya giris yaptigini kontrol eder
+    Then take screenshot
 
   Scenario: TC02_user_should_navigate_room_reservation_page
+
     Given user navigates to the create_room_reservation_page
+
 
   Scenario: TC03_user_should_be_able_to_book_a_reservation
 
@@ -23,5 +34,7 @@ Feature: Room Reservation
     And user clicks on the is paid_checkbox
     And user clicks on save_button
     Then user verifies the success_message
+    Then take screenshot
     And sayfayi kapatir
+
 

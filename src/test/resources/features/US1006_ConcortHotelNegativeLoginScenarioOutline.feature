@@ -1,6 +1,7 @@
+@CH
 Feature: US1006 Concort Hotel sayfasinda farkli kullanici bilgileri ile negatif test
 
-  @CH
+
   Scenario Outline:
 
 

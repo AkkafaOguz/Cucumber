@@ -1,4 +1,4 @@
-@capital
+@Paralel01
 Feature: Capital Search on Google
 
   Scenario Outline: capital search
@@ -8,6 +8,7 @@ Feature: Capital Search on Google
     Given kullanici "googleUrl" sayfasina gider
     Then kullanici arama kutusuna "<capital>" yazar ve aratir
     Then  Sonucun "<capital>" icerdigini test eder
+    And sayfayi kapatir
 
 
     Examples:
@@ -18,3 +19,4 @@ Feature: Capital Search on Google
       | Vienna  |
       | Berlin  |
       | Madrid  |
+

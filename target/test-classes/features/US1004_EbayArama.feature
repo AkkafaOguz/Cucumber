@@ -6,6 +6,7 @@ Feature: US1004 Ebay sayfasinda kelime arama
     Given kullanici "ebayUrl" sayfasina gider
     Then ebayda "nutella" icin arama yapar
     And ebayda sonucun "nutella" icerdigini test eder
+    And sayfayi kapatir
 
 
 

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-10T10:05:10.938Z",
+        "start_timestamp": "2021-11-19T10:26:50.226Z",
         "before": [
           {
             "result": {
-              "duration": 999700,
+              "duration": 15627900,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "TC01_user_should_login_manager_profile",
+        "line": 23,
+        "name": "User should create and verify an account #1",
         "description": "",
-        "id": "room-reservation;tc01-user-should-login-manager-profile",
+        "id": "create-an-account;user-should-create-and-verify-an-account-#1;;2",
         "after": [
           {
             "result": {
-              "duration": 999400,
+              "duration": 1000300,
               "status": "passed"
             },
             "match": {
@@ -31,95 +31,228 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8089325000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici \"concortHotelQaUrl\" sayfasina gider",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"concortHotelQaUrl\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepDefinitions.amazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 654888600,
+              "duration": 4330647200,
               "status": "passed"
             },
             "line": 7,
-            "name": "login linkine tiklar",
+            "name": "kullanici \"editorDataTables\" sayfasina gider",
             "match": {
-              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.login_linkine_tiklar()"
+              "arguments": [
+                {
+                  "val": "\"editorDataTables\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 130864200,
+              "duration": 654643300,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enter manager_id and manager_password",
+            "name": "yeni bir kullanici olusturmak icin new butonuna tiklar",
             "match": {
-              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.user_enter_manager_id_and_manager_password(io.cucumber.datatable.DataTable)"
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.yeni_bir_kullanici_olusturmak_icin_new_butonuna_tiklar()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "manager",
-                  "Manager1!"
-                ]
-              }
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9263412400,
+              "duration": 64272300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "adini \"Oguzhan\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Oguzhan\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.adiniGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62558700,
               "status": "passed"
             },
             "line": 10,
-            "name": "login butonuna basar",
+            "name": "soyadini \"Akkafa\" girer",
             "match": {
-              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.login_butonuna_basar()"
+              "arguments": [
+                {
+                  "val": "\"Akkafa\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.soyadiniGirer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47709300,
+              "duration": 63084200,
               "status": "passed"
             },
             "line": 11,
-            "name": "sayfaya giris yaptigini kontrol eder",
+            "name": "pozisyonunu \"QA Lead\" girer",
             "match": {
-              "location": "stepDefinitions.ConcortHotelQaEnvironmentStepDefinitions.sayfayaGirisYaptiginiKontrolEder()"
+              "arguments": [
+                {
+                  "val": "\"QA Lead\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.pozisyonunuGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58999400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "ofisini \"LA\" oldugunu girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LA\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.ofisiniOldugunuGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45997900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "extension \"1995\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1995\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.extensionGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104999500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "baslangic tarihini \"2021-11-18\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2021-11-18\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.baslangicTarihiniGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49999900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "maasini \"125000\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"125000\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.maasiniGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 63154900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "create tusuna basar",
+            "match": {
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.create_tusuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125563100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "adini \"Oguzhan\" arama kutusuna girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Oguzhan\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.adiniAramaKutusunaGirer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152151600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "kaydinin olustugunu dogrular \"Oguzhan\", \"Akkafa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Oguzhan\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Akkafa\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.kaydininOlustugunuDogrular(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@room_reservation"
+            "name": "@ddt"
           }
         ]
       },
       {
-        "start_timestamp": "2021-11-10T10:05:29.181Z",
+        "start_timestamp": "2021-11-19T10:26:56.083Z",
         "before": [
           {
             "result": {
-              "duration": 1000600,
               "status": "passed"
             },
             "match": {
@@ -127,10 +260,10 @@
             }
           }
         ],
-        "line": 13,
-        "name": "TC02_user_should_navigate_room_reservation_page",
+        "line": 24,
+        "name": "User should create and verify an account #1",
         "description": "",
-        "id": "room-reservation;tc02-user-should-navigate-room-reservation-page",
+        "id": "create-an-account;user-should-create-and-verify-an-account-#1;;3",
         "after": [
           {
             "result": {
@@ -142,29 +275,225 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1898042700,
+              "duration": 351171600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici \"editorDataTables\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"editorDataTables\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 636765500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "yeni bir kullanici olusturmak icin new butonuna tiklar",
+            "match": {
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.yeni_bir_kullanici_olusturmak_icin_new_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65963100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "adini \"Onur Enes\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Onur Enes\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.adiniGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 60807400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "soyadini \"Celik\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Celik\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.soyadiniGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64012600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "pozisyonunu \"Team Lead\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Team Lead\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.pozisyonunuGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57009000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "ofisini \"NY\" oldugunu girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NY\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.ofisiniOldugunuGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45997100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "extension \"1996\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1996\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.extensionGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 95998800,
               "status": "passed"
             },
             "line": 14,
-            "name": "user navigates to the create_room_reservation_page",
+            "name": "baslangic tarihini \"2021-11-19\" girer",
             "match": {
-              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.user_navigates_to_the_create_room_reservation_page()"
+              "arguments": [
+                {
+                  "val": "\"2021-11-19\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.baslangicTarihiniGirer(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58694400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "maasini \"150000\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"150000\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.maasiniGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56016500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "create tusuna basar",
+            "match": {
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.create_tusuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125515700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "adini \"Onur Enes\" arama kutusuna girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Onur Enes\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.adiniAramaKutusunaGirer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110454600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "kaydinin olustugunu dogrular \"Onur Enes\", \"Celik\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Onur Enes\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Celik\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.kaydininOlustugunuDogrular(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@room_reservation"
+            "name": "@ddt"
           }
         ]
       },
       {
-        "start_timestamp": "2021-11-10T10:05:31.085Z",
+        "start_timestamp": "2021-11-19T10:26:57.831Z",
         "before": [
           {
             "result": {
@@ -175,10 +504,255 @@
             }
           }
         ],
-        "line": 16,
-        "name": "TC03_user_should_be_able_to_book_a_reservation",
+        "line": 25,
+        "name": "User should create and verify an account #1",
         "description": "",
-        "id": "room-reservation;tc03-user-should-be-able-to-book-a-reservation",
+        "id": "create-an-account;user-should-create-and-verify-an-account-#1;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1004200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 306061500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "kullanici \"editorDataTables\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"editorDataTables\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 630773900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "yeni bir kullanici olusturmak icin new butonuna tiklar",
+            "match": {
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.yeni_bir_kullanici_olusturmak_icin_new_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52266600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "adini \"Muhammed\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Muhammed\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.adiniGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62220900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "soyadini \"Guner\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Guner\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.soyadiniGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51997900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "pozisyonunu \"Psychologist\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Psychologist\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.pozisyonunuGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59014700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "ofisini \"FL\" oldugunu girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FL\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.ofisiniOldugunuGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61999600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "extension \"1996\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1996\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.extensionGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 101999600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "baslangic tarihini \"2021-06-01\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2021-06-01\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.baslangicTarihiniGirer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53003700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "maasini \"225000\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"225000\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.maasiniGirer(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54013200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "create tusuna basar",
+            "match": {
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.create_tusuna_basar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120795600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "adini \"Muhammed\" arama kutusuna girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Muhammed\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.adiniAramaKutusunaGirer(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115308200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "kaydinin olustugunu dogrular \"Muhammed\", \"Guner\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Muhammed\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Guner\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.kaydininOlustugunuDogrular(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ddt"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-19T10:26:59.512Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User should create and verify an account #2",
+        "description": "",
+        "id": "create-an-account;user-should-create-and-verify-an-account-#2",
         "after": [
           {
             "result": {
@@ -194,124 +768,172 @@
         "steps": [
           {
             "result": {
-              "duration": 899938200,
+              "duration": 278423300,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user enters all required fields",
+            "line": 30,
+            "name": "kullanici \"editorDataTables\" sayfasina gider",
             "match": {
-              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.user_enters_all_required_fields(io.cucumber.datatable.DataTable)"
+              "arguments": [
+                {
+                  "val": "\"editorDataTables\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4419718300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "yeni bir kullanici olusturmak icin new butonuna tiklar formu doldurur ve kaydini dogrular",
+            "match": {
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.yeni_bir_kullanici_olusturmak_icin_new_butonuna_tiklar_formu_doldurur_ve_kaydini_dogrular(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "selectUserDropDown",
-                  "selectHotelRoomDropDown",
-                  "priceBox",
-                  "dateStartBox",
-                  "dateEndBox",
-                  "adultAmountBox",
-                  "childrenAmountBox",
-                  "contactNameSurnameBox",
-                  "contactPhoneBox",
-                  "contactEmailBox",
-                  "notesBox"
+                  "name",
+                  "surname",
+                  "position",
+                  "office",
+                  "extension",
+                  "startDate",
+                  "salary"
                 ]
               },
               {
                 "cells": [
-                  "manager",
                   "Oguzhan",
-                  "500",
-                  "11/18/2021",
-                  "11/20/2021",
-                  "2",
-                  "3",
-                  "Test",
-                  "(999) 999-9999",
-                  "test@gmail.com",
-                  "test not"
+                  "Akkafa",
+                  "QA Lead",
+                  "LA",
+                  "1995",
+                  "2021-11-18",
+                  "125000"
+                ]
+              },
+              {
+                "cells": [
+                  "Onur Enes",
+                  "Celik",
+                  "Team Lead",
+                  "NY",
+                  "1996",
+                  "2021-11-19",
+                  "150000"
+                ]
+              },
+              {
+                "cells": [
+                  "Muhammed",
+                  "Guner",
+                  "Psychologist",
+                  "FL",
+                  "1996",
+                  "2021-06-01",
+                  "225000"
                 ]
               }
             ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ddt"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-19T10:27:04.216Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "User should create and verify an account #3",
+        "description": "",
+        "id": "create-an-account;user-should-create-and-verify-an-account-#3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 341840600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "kullanici \"editorDataTables\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"editorDataTables\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinition.kullaniciSayfasinaGider(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 56000500,
+              "duration": 4845498700,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user clicks on the approved_checkbox",
+            "line": 39,
+            "name": "yeni bir kullanici olusturmak icin new butonuna tiklar formu doldurur \"src/test/resources/testData/kullaniciBilgileriExcelData.xlsx\" \"KullaniciBilgileri\" ve kaydini dogrular",
             "match": {
-              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userClicksOnTheApproved_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61998400,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user clicks on the is paid_checkbox",
-            "match": {
-              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userClicksOnTheIsPaid_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 66002500,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user clicks on save_button",
-            "match": {
-              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userClicksOnSave_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 999041100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "user verifies the success_message",
-            "match": {
-              "location": "stepDefinitions.Concort_Hotel_Room_Reservation.userVerifiesTheSuccess_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 695103000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "sayfayi kapatir",
-            "match": {
-              "location": "stepDefinitions.amazonStepDefinition.sayfayi_kapatir()"
+              "arguments": [
+                {
+                  "val": "\"src/test/resources/testData/kullaniciBilgileriExcelData.xlsx\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"KullaniciBilgileri\"",
+                  "offset": 133
+                }
+              ],
+              "location": "stepDefinitions.EditorDataTablesStepDefinitions.yeniBirKullaniciOlusturmakIcinNewButonunaTiklarFormuDoldururVeKaydiniDogrular(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@room_reservation"
+            "name": "@ddt"
           }
         ]
       }
     ],
-    "name": "Room Reservation",
+    "name": "Create an Account",
     "description": "",
-    "id": "room-reservation",
+    "id": "create-an-account",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US2002_All_fields_are_required_to_make_a_room_reservation.feature",
+    "uri": "file:src/test/resources/features/scenarioOutline_dataTables_excelData/editorDataTables.feature",
     "tags": [
       {
-        "name": "@room_reservation",
+        "name": "@ddt",
         "type": "Tag",
         "location": {
           "line": 1,
